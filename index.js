@@ -1,4 +1,3 @@
-export {version} from "./build/package";
 export * from "d3-array";
 export * from "d3-color";
 export * from "d3-dispatch";
