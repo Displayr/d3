@@ -1,0 +1,15 @@
+export var name = "d3";
+export var version = "4.12.2";
+export var description = "Data-Driven Documents";
+export var keywords = ["dom","visualization","svg","animation","canvas"];
+export var homepage = "https://d3js.org";
+export var license = "BSD-3-Clause";
+export var author = {"name":"Mike Bostock","url":"https://bost.ocks.org/mike"};
+export var main = "build/d3.node.js";
+export var unpkg = "build/d3.min.js";
+export var jsdelivr = "build/d3.min.js";
+export var module = "index";
+export var repository = {"type":"git","url":"https://github.com/d3/d3.git"};
+export var scripts = {"pretest":"rimraf build && mkdir build && json2module package.json > build/package.js && node rollup.node","test":"tape 'test/**/*-test.js'","prepublishOnly":"npm run test && rollup -c && uglifyjs -b beautify=false build/d3.js -c negate_iife=false -m -o build/d3.min.js"};
+export var devDependencies = {"json2module":"0.0","package-preamble":"0.1","rimraf":"2","rollup":"0.53","rollup-plugin-ascii":"0.0","rollup-plugin-node-resolve":"3","tape":"4","uglify-js":"3.2"};
+export var dependencies = {"d3-array":"1.2.1","d3-color":"1.0.3","d3-dispatch":"1.0.3","d3-drag":"1.2.1","d3-ease":"1.0.3","d3-scale":"1.0.7","d3-selection":"Displayr/d3-selection","d3-shape":"1.2.0","d3-transition":"1.1.1"};
