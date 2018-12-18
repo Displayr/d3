@@ -41,10 +41,12 @@
   "dependencies": {
     "d3-array": "1",
     "d3-color": "1",
+    "d3-contour": "1",
     "d3-dispatch": "1",
     "d3-drag": "1",
     "d3-ease": "1",
     "d3-scale": "2",
+    "d3-scale-chromatic": "1",
     "d3-selection": "Displayr/d3-selection",
     "d3-shape": "1",
     "d3-transition": "1"
